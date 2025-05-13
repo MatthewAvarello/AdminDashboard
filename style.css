@@ -96,4 +96,39 @@ header{
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "icon mini""icon normal";
+    align-items: center;
+    margin-left: 5vw;
+}
+#lowpic{
+    grid-area: icon;
+}
+#greet{
+    grid-area: mini;
+}
+#namebot{
+    grid-area: normal;
+}
+.lefty .propic{
+    height: 4rem;
+    margin-right: 8px;
+}
+.righty button{
+    background-color: #24a0ed;
+    color: white;
+    height: 40px;
+    width: clamp(50px, 5vw, 10vw);
+    border: 0px;
+    border-radius: 20px;
+}
+#bottom{
+    padding: 1vh;
+    justify-content: space-between;
+}
+.righty{
+    margin-right: 10vw;
+    display: flex;
+    gap: 8px;
+}
+.mid{
+    font-size: 1.2rem;
 }

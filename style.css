@@ -137,6 +137,8 @@ header{
 main{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: min-content min-content;
+    grid-template-areas: "Hello Announce""Projects Announce";
     background-color: #e0e0e0;
     padding: 1vw;
 }
@@ -145,6 +147,7 @@ main{
     grid-template-columns: repeat(auto-fit, 300px);
     grid-auto-rows: min-content;
     gap: 16px;
+    grid-area: Projects;
 }
 .card{
     background-color: grey;
@@ -166,4 +169,41 @@ main{
     display: flex;
     flex-direction: column;
     margin-left: 1vw;
+}
+main p{
+    grid-area: Hello;
+    margin-bottom: 1vh;
+}
+#SideInfo{
+    grid-area: Announce;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    gap: 5vh;
+}
+#Announcements > *{
+    background-color: white;
+}
+h2{
+    margin: 0px;
+    padding: 1vh;
+}
+#Announcements{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vw;
+}
+.boda{
+    border-bottom: 1px solid grey;
+    padding-bottom: 4px;
+}
+.contann{
+    padding: 1vh;
+}
+.bodac{
+    padding-bottom: 4px;
+}
+h3{
+    margin-right: 8px;
+    margin-bottom: 8px;
+    margin-top: 8px;
 }

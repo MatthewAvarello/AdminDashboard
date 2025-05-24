@@ -176,8 +176,8 @@ main p{
 }
 #SideInfo{
     grid-area: Announce;
-    display: grid;
-    grid-template-rows: repeat(2,1fr);
+    display: flex;
+    flex-direction: column;
     gap: 5vh;
 }
 #Announcements > *{
@@ -206,4 +206,38 @@ h3{
     margin-right: 8px;
     margin-bottom: 8px;
     margin-top: 8px;
+}
+#Trending{
+    margin-left: 1vw;
+    padding: 2vw;
+    align-self: self-end;
+    background-color: white;
+}
+#Trending > *{
+    background-color: white;
+}
+.person{
+    display: grid;
+    grid-template-columns: min-content 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "Trendpic at""Trendpic cool";
+}
+.person img {
+    grid-area: Trendpic;
+    margin-right: 0.3vw;
+}
+.at{
+    grid-area: at;
+}
+.Cool{
+    grid-area: cool;
+}
+.personscont{
+    display: grid;
+    gap: 2vh;
+}
+#Trending h2{
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
